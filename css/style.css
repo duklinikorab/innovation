@@ -1,0 +1,894 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.loader-animation {
+  font-size: 18px;
+  line-height: 1.6;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.loader-animation h3 {
+  margin-top: 70px;
+}
+.loader {
+  height: 50px;
+  transform-origin: bottom center;
+  animation: rotate 3s linear infinite;
+}
+
+.circle {
+  display: inline-block;
+  background-color: #41bfc4;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: grow 1.5s linear infinite;
+  margin: -10px;
+}
+
+.circle:nth-child(2) {
+  background-color: #5b79d6;
+  animation-delay: 0.75s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1);
+  }
+}
+.loader-animation i {
+  color: #61c3c7;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Bahnschrift Condensed";
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.mini-container {
+  width: 70%;
+  margin: auto;
+}
+/* Navbar */
+nav {
+  display: flex;
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0px 20px;
+}
+
+nav ul li a {
+  color: #61c3c7;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #5b79d6;
+  border-bottom: 5px solid #5b79d6;
+  padding-bottom: 45px;
+}
+
+.mobile-menu {
+  display: none;
+}
+/* Mbarimi i Navbar */
+
+/* Header */
+header {
+  background-image: url("../images/fmija.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 90vw;
+  margin-top: 2%;
+}
+/* Permbajtja e header (text dhe butona) */
+.align-buttons-text {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 40%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.text-within-header h1,
+.text-within-header p,
+.buttons-within-header h1 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 62px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.text-within-header p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.text-within-header hr {
+  width: 22%;
+  padding: 2.5px;
+  border: none;
+  background-color: #61c3c7;
+  margin: 15px 0px;
+}
+
+.buttons-within-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-within-header h1 {
+  font-size: 45px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-family: "Bahnschrift Condensed";
+  margin: 0px 0px 15px 30px;
+}
+
+.buttons-within-header a {
+  padding: 14px 95px;
+  border-radius: 35px;
+  background-color: white;
+  text-align: center;
+  border: none;
+  margin: 7px 15px 7px 0px;
+  outline: none;
+  color: #5ac1c5;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.buttons-within-header a:hover {
+  color: #fff;
+  background-color: #6ec1e4;
+}
+/* Mbarimi i Header */
+
+/* Seksioni technology-lesson */
+.technology-lesson {
+  margin-top: 20%;
+  display: flex;
+}
+
+.text-left {
+  width: 50%;
+}
+.text-left h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #5978d5;
+}
+
+.text-left h4 {
+  color: #5bc1c4;
+  font-size: 20px;
+}
+
+.image-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.image-right img {
+  width: 100%;
+}
+
+.line-image {
+  width: 100%;
+  position: relative;
+  bottom: 8px;
+}
+/* Mbarimi i seksionit technology-lesson */
+
+/* Introduction ne Programim, Gjuhe Angleze, Gjuhe Gjermane */
+.introduction {
+  display: flex;
+  margin-top: 15%;
+}
+
+.introduction hr {
+  width: 20%;
+  align-self: center;
+  padding: 2.5px;
+  border: none;
+  background-color: #68e4cd;
+}
+
+.introduction p {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500 !important;
+}
+
+.programming,
+.english,
+.german {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+.english hr {
+  background-color: #5bc2c5;
+}
+
+.german hr {
+  background-color: #5b79d6;
+}
+/* Mbarimi i introduction */
+
+/* Apliko Tani */
+.apply-now {
+  margin-top: 15%;
+  background-color: #84fed2;
+}
+
+.apply-now .container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.apply-now .container img:nth-child(2) {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.apply-now .form {
+  width: 50%;
+}
+.apply-now form {
+  margin-top: 2rem;
+}
+.apply-now .icons {
+  display: flex;
+  align-items: center;
+}
+.apply-now .icons i {
+  margin-top: 1rem;
+  font-size: 90px;
+  margin-left: 1rem;
+}
+
+.apply-now img {
+  margin: 15px 0px 0px 10px;
+}
+
+.apply-now input[type="text"],
+.apply-now input[type="email"],
+.apply-now select,
+.apply-now textarea {
+  width: 90%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #75e4bd;
+  margin: auto;
+}
+.apply-now select {
+  color: #757575;
+}
+
+.apply-now input::placeholder,
+.apply-now select,
+.apply-now textarea {
+  font-family: "Bahnschrift Condensed";
+  font-size: 16px;
+}
+
+.apply-now select {
+  cursor: pointer;
+}
+
+.apply-now button {
+  border: #5bc1c4;
+  outline: none;
+  background-color: white;
+  color: #5bc1c4;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+.apply-now .fa-arrow-right {
+  font-size: 18px;
+}
+/* Mbarimi i Aplikimit */
+
+/* Footer */
+footer {
+  background-color: #191919;
+  color: white;
+}
+
+.line-up-parts-footer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 35%;
+  justify-content: space-between;
+}
+/* Mbarimi i Footer */
+
+/* Nga ketu fillon contact.html */
+
+/* Headeri i faqes Kontakti */
+.first-part,
+.gradient-bg {
+  background-image: url("../images/coding_web23\ 2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+  margin-top: 2%;
+  text-align: center;
+  color: #333;
+}
+.text-header-contact {
+  text-align: left;
+}
+
+.text-header-contact hr {
+  width: 8%;
+}
+
+/* Mbarimi i Headerit */
+
+/* Seksioni contact-form */
+.dont-hesitate {
+  margin-top: 10%;
+}
+
+.dont-hesitate span {
+  color: #5ac1c5;
+}
+
+.align-contact-form {
+  display: flex;
+  width: 100%;
+}
+
+.contact-form {
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #ccc;
+}
+
+.image-contact {
+  width: 50%;
+  height: 600px;
+}
+
+.contact-form article {
+  width: 80%;
+}
+
+.contact-form aside {
+  width: 20%;
+  background-color: #5ac1c5;
+  border-left: 1px solid #ccc;
+}
+
+.left-part-contact-form h1 {
+  font-size: 30px;
+  margin-left: 15%;
+}
+
+.left-part-contact-form input,
+.left-part-contact-form textarea {
+  width: 100%;
+  outline: none;
+  border: 2px solid #5ac1c5;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "Bahnschrift Condensed";
+  margin: 10px 15%;
+  padding: 8px;
+}
+
+.left-part-contact-form input:focus,
+.left-part-contact-form textarea:focus {
+  box-shadow: 1px 1px 5px #5ac1c5;
+}
+
+.left-part-contact-form input[type="submit"] {
+  border: none;
+  background-color: #5ac1c5;
+  height: 35px;
+  width: 50%;
+  float: left;
+}
+
+.left-part-contact-form h1 span {
+  color: #5ac1c5;
+}
+
+.right-part-contact-form {
+  position: relative;
+  left: 11.2%;
+  height: 80%;
+  margin: auto;
+  background-color: #333;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.right-part-contact-form > div {
+  font-size: 18px;
+  color: #fff;
+}
+
+.right-part-contact-form i {
+  font-size: 30px;
+  color: #5ac1c5;
+}
+
+/* Mbarimi i contact-form */
+
+/* klasa error dhe errors jane krijuar per te stilizuar tekstin qe del si validim ne rast se nuk jane permbushur kerkesat e validimit */
+.error,
+.errors {
+  color: red;
+}
+
+.errors {
+  float: right;
+}
+/* AlertBox pasi qe te dergohet kerkesa per aplikim ose kontakt, ne vijim del alertBox-i perkates */
+#alertBox {
+  width: 60%;
+  padding: 20px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  background-color: #bcecc4;
+  border: 1px solid #333;
+  border-radius: 10px;
+  display: none;
+}
+
+#alertBox p,
+#alertBox h1 {
+  margin-left: 2.5%;
+}
+#alertBox hr {
+  width: 95%;
+  margin: auto;
+}
+#alertBox button {
+  float: right;
+  margin-right: 2.5%;
+  padding: 7px 10px;
+  border: 1px solid #f5c6cb;
+  background-color: red;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Nga ketu fillon Responsive website-s */
+@media only screen and (min-width: 900px) and (max-width: 1560px) {
+  nav ul li a:hover {
+    padding-bottom: 39px;
+  }
+  .line-image {
+    position: relative;
+    bottom: 7px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  nav ul li a:hover {
+    padding-bottom: 40px;
+  }
+
+  .mini-container {
+    width: 85%;
+  }
+  .image-right img {
+    width: 100%;
+  }
+  .line-image {
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1250px) {
+  nav ul li a:hover {
+    padding-bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    padding-bottom: 32px;
+  }
+  .text-left h1 {
+    font-size: 27px;
+  }
+  .text-left h4 {
+    font-size: 18px;
+  }
+  .image-right img {
+    height: auto;
+  }
+  .apply-now .container img:nth-child(2) {
+    display: none;
+  }
+  .apply-now .form {
+    width: 100%;
+  }
+  .apply-now .icons i {
+    display: none;
+  }
+  .apply-now .icons img {
+    display: block;
+    margin: auto;
+  }
+  .apply-now input[type="text"],
+  .apply-now input[type="email"],
+  .apply-now select,
+  .apply-now textarea,
+  .apply-now button {
+    margin: auto;
+    display: block;
+  }
+  .image-right {
+    display: none;
+  }
+  .text-left {
+    width: 100%;
+  }
+  .line-image {
+    position: static;
+  }
+}
+@media (max-width: 999px) {
+  .mini-container {
+    width: 95%;
+  }
+  nav ul {
+    display: none;
+  }
+  nav i {
+    margin-top: 3rem;
+    color: #61c3c7;
+    display: block !important;
+  }
+  nav img {
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+  }
+  .mobile-menu {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    background: #41bfc4;
+    border-radius: 10px;
+    padding: 3rem;
+  }
+  .mobile-menu ul {
+    list-style: none;
+  }
+  .mobile-menu ul li {
+    padding: 1rem;
+  }
+  .mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 850px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li a:hover {
+    padding-bottom: 35px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .image-right img {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 849px) {
+  nav ul li a:hover {
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 800px) {
+  .mini-container {
+    width: 98%;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    padding: none;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 750px) {
+  .mini-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav ul li {
+    padding: 0px 10px;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    padding: none;
+  }
+
+  .text-within-header h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .text-within-header h1 br {
+    display: none;
+  }
+  .text-within-header hr {
+    margin: 1rem auto;
+  }
+  .text-within-header p {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .text-within-header p:after {
+    content: "";
+    width: 2px;
+    position: absolute;
+    height: 15px;
+    background: white;
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+  .text-within-header p:last-child:after {
+    position: static;
+  }
+  .align-buttons-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .align-buttons-text {
+    text-align: center;
+    position: relative;
+    top: 15%;
+  }
+
+  .buttons-within-header {
+    display: none;
+  }
+  .technology-lesson {
+    display: block;
+  }
+
+  .text-left {
+    width: 100%;
+  }
+  .apply-now input[type="text"],
+  .apply-now input[type="email"],
+  .apply-now select,
+  .apply-now textarea,
+  .apply-now button {
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+
+  .image-right img {
+    width: 200%;
+  }
+  .introduction {
+    display: block;
+  }
+  .programming,
+  .english,
+  .german {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    padding: 30px;
+  }
+  .error {
+    margin-left: 5%;
+  }
+  .title,
+  .programming span,
+  .english span,
+  .german span {
+    text-align: center;
+  }
+  .programming img,
+  .english img,
+  .german img {
+    width: 30%;
+  }
+
+  .apply-now textarea {
+    width: 90%;
+    margin: auto;
+  }
+
+  .apply-now input,
+  .apply-now select,
+  .apply-now textarea,
+  label,
+  .apply-now i,
+  .apply-now input::placeholder,
+  .apply-now select,
+  .apply-now textarea {
+    font-family: "Bahnschrift Condensed";
+    font-size: 16px;
+  }
+
+  .apply-now h3 i {
+    font-size: 18px;
+    margin-left: 3px;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 575px) {
+  .line-image {
+    height: 10px;
+    position: relative;
+    bottom: 12px;
+  }
+  .buttons-within-header a {
+    padding: 13px 60px;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 1110px) {
+  .align-contact-form {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .image-contact {
+    width: 100%;
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 1110px) {
+  .image-contact {
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 900px) {
+  footer > div {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div {
+    padding: 20px;
+  }
+  .line-up-parts-footer {
+    position: relative;
+    top: 7%;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 1200px) {
+  .mini-container {
+    position: static;
+    width: 80%;
+    margin: auto;
+  }
+  .text-within-header h1,
+  .text-within-header p,
+  .buttons-within-header h1 {
+    font-size: 35px;
+  }
+  .text-within-header p {
+    font-size: 20px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons-within-header a {
+    margin: auto 0;
+    margin-bottom: 1rem;
+    padding: 8px 20px;
+  }
+  .buttons-within-header h1 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  .text-left h1 {
+    font-size: 28px;
+  }
+  .text-left h4 {
+    font-size: 18px;
+  }
+}
